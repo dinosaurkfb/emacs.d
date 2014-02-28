@@ -129,7 +129,6 @@
 (require 'init-moz)
 (require 'init-gtags)
 ;; use evil mode (vi key binding)
-(if (not (boundp 'light-weight-emacs)) (require 'init-evil))
 (require 'init-misc)
 (require 'init-ctags)
 (require 'init-ace-jump-mode)
@@ -198,7 +197,7 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
 ;;----------------------------------------------------------------------------
-(require 'init-local nil t)
+(require 'init-local)
 
 
 ;;----------------------------------------------------------------------------
