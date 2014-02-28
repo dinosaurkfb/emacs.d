@@ -122,6 +122,7 @@ ARCHIVE is the string name of the package archive.")
 ;;------------------------------------------------------------------------------
 
 (package-initialize)
+(elpy-enable)
 
 (require-package 'all)
 (require-package 'xml-rpc)
