@@ -141,7 +141,8 @@
 (require 'init-emms)
 (require 'init-lua-mode)
 (require 'init-doxygen)
-(require 'init-workgroups2)
+;; workgroup2 doesn't work well in my environment.
+;;(require 'init-workgroups2)
 (require 'init-move-window-buffer)
 (require 'init-term-mode)
 (require 'init-web-mode)
