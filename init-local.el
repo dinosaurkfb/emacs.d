@@ -5,7 +5,7 @@
 
 ;; C-@ is used by expand-region. And C-space is always the same
 ;; as C-@ when using XTERM
-(global-set-key (kbd "C-m") 'set-mark-command)
+(global-set-key (kbd "C-c m") 'set-mark-command)
 
 (global-set-key "%" 'match-paren)
 
