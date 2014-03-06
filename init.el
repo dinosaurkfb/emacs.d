@@ -126,7 +126,7 @@
 ;; (require 'init-gist)
 (require 'init-emacspeak)
 (require 'init-pomodoro)
-(require 'init-moz)
+;;(require 'init-moz)
 (require 'init-gtags)
 ;; use evil mode (vi key binding)
 (require 'init-misc)
