@@ -40,6 +40,8 @@
 ;bind this function to ‘a’, which is the normal w3m bookmark binding:
 (eval-after-load "w3m" '(progn
                           (define-key w3m-info-like-map "A" 'delicious-post)
+                          (define-key w3m-mode-map (kbd "B") 'w3m-view-previous-page)
+                          (define-key w3m-mode-map (kbd "N") 'w3m-view-next-page)
                           (w3m-lnum-mode 1)
                           ))
 
@@ -91,8 +93,5 @@
     ))
 
 (add-hook 'prog-mode-hook '( lambda () (local-set-key (kbd "C-c ; h") 'w3mext-hacker-search)))
-
-(define-key  w3m-mode-map (kbd "B") 'w3m-view-previous-page)
-(define-key  w3m-mode-map (kbd "N") 'w3m-view-next-page)
 
 (provide 'init-emacs-w3m)
