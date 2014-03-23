@@ -19,5 +19,18 @@
 (setq user-full-name "Kong Fanbin")
 (setq user-mail-address "kfbuniversity@gmail.com")
 ;;Personal Information
+(add-to-list 'exec-path "D:/ProgramFiles_x86/Aspell/bin/")
+(setq-default ispell-program-name "aspell")
+(ispell-change-dictionary "american" t)
+(require 'ispell)
 
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
+(package-initialize)
+(elpy-enable)
+(set-fontset-font "fontset-default" 'cp936 '("SimSun" . "unicode-bmp"))
 (provide 'init-local)
