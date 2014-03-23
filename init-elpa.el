@@ -83,6 +83,7 @@ ARCHIVE is the string name of the package archive.")
      emms
      pomodoro
      helm
+     helm-gtags
      helm-ls-git
      auto-compile
      packed

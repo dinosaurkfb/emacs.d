@@ -53,7 +53,6 @@
    )
   )
 
-
 (require 'init-elpa)
 (require 'init-exec-path) ;; Set up $PATH
 (require 'init-frame-hooks)
@@ -127,7 +126,7 @@
 (require 'init-emacspeak)
 (require 'init-pomodoro)
 ;;(require 'init-moz)
-(require 'init-gtags)
+;;(require 'init-gtags)
 ;; use evil mode (vi key binding)
 (require 'init-misc)
 (require 'init-ctags)
@@ -217,7 +216,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
+ '(bmkp-last-as-first-bookmark-file "~\\.emacs.d\\bookmarks")
  '(safe-local-variable-values (quote ((emacs-lisp-docstring-fill-column . 75) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -229,3 +228,8 @@
 ;;; no-byte-compile: t
 ;;; End:
 (put 'erase-buffer 'disabled nil)
+
+(require 'package)
+(add-to-list 'package-archives
+             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+
