@@ -47,6 +47,8 @@
 ;; key bindings
 (add-hook 'helm-gtags-mode-hook
           '(lambda ()
+              (local-set-key (kbd "M-.") 'helm-gtags-find-tag-from-here)
+              (local-set-key (kbd "M-*") 'helm-gtags-pop-stack)
               (local-set-key (kbd "M-t") 'helm-gtags-find-tag)
               (local-set-key (kbd "M-r") 'helm-gtags-find-rtag)
               (local-set-key (kbd "M-s") 'helm-gtags-find-symbol)
