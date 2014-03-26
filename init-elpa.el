@@ -82,6 +82,9 @@ ARCHIVE is the string name of the package archive.")
      lua-mode
      emms
      pomodoro
+     git-commit-mode
+     git-rebase-mode
+     magit
      helm
      helm-gtags
      helm-ls-git
