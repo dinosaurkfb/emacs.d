@@ -31,7 +31,7 @@
   (local-set-key "\M-f" 'c-forward-into-nomenclature)
   (local-set-key "\M-b" 'c-backward-into-nomenclature)
   (setq cc-search-directories '("." "/usr/include" "/usr/local/include/*" "../*/include" "$WXWIN/include"))
-  (setq c-basic-offset 4)
+  (setq c-basic-offset 2)
   (setq c-style-variables-are-local-p nil)
   ;give me NO newline automatically after electric expressions are entered
   (setq c-auto-newline nil)
@@ -59,11 +59,16 @@
 
   ;first arg of arglist to functions: tabbed in once
   ;(default was c-lineup-arglist-intro-after-paren)
-  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-intro
+                '(c-lineup-arglist-intro-after-paren))
 
   ;second line of arglist to functions: tabbed in once
   ;(default was c-lineup-arglist)
-  (c-set-offset 'arglist-cont-nonempty '+)
+  (c-set-offset 'arglist-cont-nonempty
+                '(c-lineup-arglist))
+
+  (c-set-offset 'arglist-close
+                '(c-lineup-arglist-close-under-paren))
 
   ;switch/case:  make each case line indent from switch
   (c-set-offset 'case-label '+)
